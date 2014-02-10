@@ -1,0 +1,45 @@
+\input{../../common/header.tex}
+\usepackage[ngerman]{babel}
+\usepackage{bibgerm}
+
+	
+%\title{Design and Development of the Software and Computing Framework for the
+%L1/L2 Online PC Farm of the NA62 Experiment at CERN}
+\title{Design of the Online PC Farm for the High Level Trigger of the NA62 Experiment at CERN}
+
+\author{Jonas Kunze}
+\date{11/1/2012\newline\tiny IEEE NSS Anaheim, California}
+
+\institute[{Universität Mainz}]{
+	\inst{} University of Mainz}
+\titlegraphic{\includegraphics[height=3cm]{penguins}}
+\logo{\includegraphics[width=2cm]{na62-logo}}
+\subject{NA62 online pc-farm design and implementation}
+\keywords{NA62,computing,multithreading,trigger,c++,boost,asio,10g}
+
+ \AtBeginSection[]{%
+ \begin{frame}
+ \tableofcontents[currentsection]
+ \end{frame}
+ }% AtBeginSection
+
+\begin{document}
+  	\frame{
+  		\titlepage
+  		\vspace{-2cm}
+  		\includegraphics[width=0.2\textwidth]{bmbf-logo}
+  		\vspace{1cm}
+  	}
+  	
+  	\frame{\tableofcontents}
+  	\input{intro.tex}
+  	\input{trigger.tex}
+  	\input{performance.tex}
+  	\input{outlook.tex}
+
+	\begin{frame}{}
+		\begin{center}
+			\textbf{\includegraphics[width=0.4\textwidth]{theend}}
+		\end{center} 
+	\end{frame}
+\end{document}

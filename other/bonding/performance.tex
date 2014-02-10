@@ -1,0 +1,88 @@
+\section{Performance}
+\begin{frame}{The used hardware}{}
+	\begin{block}{The network interface cards}
+		\begin{itemize}
+	  		\item Four cards with Intel  82541PI controller (PCI on PCI-X)
+	  		\item Two dualport cards Broadcom BCM5751 (PCIe 4x)
+	  		\item Two dualport cards Intel 82546GB (PCI-X)
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{The machines}
+    	\centering
+    	\begin{itemize}
+		  \item Quadcore Intel® Xeon® processor 5100 @ \textbf{1,6GHz}
+		\end{itemize}
+    \end{block}
+	
+	\begin{ergo}
+		Two machines with four direct attached links on each (no switch!)
+	\end{ergo}
+\end{frame}
+
+\begin{frame}{1G vs 2G vs 4G}{}
+	\begin{center} 
+		\includegraphics[height=7cm]{performances}
+	\end{center} 
+\end{frame}
+
+\begin{frame}{4G with different Coalescence settings}{}
+	\begin{center} 
+		\includegraphics[height=7cm]{quadCoalescence}
+	\end{center} 
+\end{frame}
+
+% 
+% \begin{frame}{Receiving performance of 1G cards}{}
+% 		\begin{columns}
+% 	 	\column{.5\textwidth}
+% 			\centering \includegraphics[width=6cm]{eth21_receive}
+% 	    \column{.5\textwidth}
+% 			\centering \includegraphics[width=6cm]{eth23_receive}
+% 	\end{columns}
+% \end{frame}
+% 
+% \begin{frame}{Receiving performance of 1G cards}{}
+% 		\begin{columns}
+% 	 	\column{.5\textwidth}
+% 			\centering \includegraphics[width=6cm]{eth21_receive}
+% 	    \column{.5\textwidth}
+% 			\centering \includegraphics[width=6cm]{eth25_receive}
+% 	\end{columns}
+% \end{frame}
+% 
+% \begin{frame}{Receiving performance of 2G trunks}{}
+% 		\begin{columns}
+% 	 	\column{.5\textwidth}
+% 			\centering \includegraphics[width=6cm]{receivedouble}
+% 	    \column{.5\textwidth}
+% 			\centering \includegraphics[width=6cm]{receivedouble2}
+% 	\end{columns}
+% \end{frame}
+% 
+% \begin{frame}{Receiving performance of 2G trunks}{}
+% 		\begin{columns}
+% 	 	\column{.5\textwidth}
+% 			\centering \includegraphics[width=6cm]{receivedouble}
+% 	    \column{.5\textwidth}
+% 			\centering \includegraphics[width=6cm]{receivedouble3}
+% 	\end{columns}
+% \end{frame}
+% 
+% \begin{frame}{Receiving performance of 3G trunks}{}
+% 		\begin{columns}
+% 	 	\column{.5\textwidth}
+% 			\centering \includegraphics[width=6cm]{receivetrip}
+% 	    \column{.5\textwidth}
+% 			\centering \includegraphics[width=6cm]{receivetrip4}
+% 	\end{columns}
+% \end{frame}
+% 
+% \begin{frame}{Receiving performance of 4G trunks}{}
+% 		\begin{columns}
+% 	 	\column{.5\textwidth}
+% 			\centering \includegraphics[width=6cm]{receivequad}
+% 	    \column{.5\textwidth}
+% 			\centering \includegraphics[width=6cm]{receivequad2}
+% 	\end{columns}
+% \end{frame}

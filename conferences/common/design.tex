@@ -1,0 +1,50 @@
+\setbeameroption{show notes}
+% \usetheme{Boadilla}
+%\useinnertheme[shadow=true]{}
+%\useoutertheme{smoothbars}
+
+\usepackage{beamerthemesplit}
+\usetheme{Frankfurt}             % es gibt noch andere Themen
+\usecolortheme{seahorse}
+
+% \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{test}}
+% \setbeamertemplate{footline}[frame number]
+
+%navi aus
+\beamertemplatenavigationsymbolsempty
+\setbeamercovered{transparent}
+
+\setbeamertemplate{itemize pro}{\includegraphics[width=3mm]{pro}}
+\setbeamertemplate{itemize contra}{\includegraphics[width=3mm]{contra}}
+\setbeamertemplate{itemize mickey}{\includegraphics[width=4mm]{mickey}}
+
+% Pro / Contra-Items
+\newcommand{\pro}{\item[\usebeamertemplate{itemize pro}]}
+\newcommand{\contra}{\item[\usebeamertemplate{itemize contra}]}
+\newcommand{\mickey}{\item[\usebeamertemplate{itemize mickey}]}
+
+\newenvironment{ergo}{\vspace{3mm}\begin{minipage}{8mm}\includegraphics[width=7mm]{arrow-right}\end{minipage}\hspace{2mm}\begin{minipage}{9.5cm}}{\end{minipage}}
+
+\setbeamercolor{note}{fg=black,bg=yellow} 
+
+
+% \AtBeginSection[]{%
+% \begin{frame}
+% \tableofcontents[currentsection]
+% \end{frame}
+% }% AtBeginSection
+
+
+% Umdefinition der Fußzeile
+ \setbeamertemplate{footline}
+ {%
+ 	\leavevmode%
+ 	\hbox{\begin{beamercolorbox}[wd=.9\paperwidth,ht=2.5ex,dp=1.125ex]{author in head/foot}%
+ 	\usebeamerfont{author in head/foot}\centering\insertshorttitle
+ 	\end{beamercolorbox}%
+ 	\begin{beamercolorbox}[wd=.1\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm ,rightskip=.3cm plus1fil]{title in head/foot}%
+ 	\usebeamerfont{title in head/foot}\hfill\insertframenumber/\inserttotalframenumber
+ 	\end{beamercolorbox}}%
+ 	\vskip0pt%
+ }
+ 

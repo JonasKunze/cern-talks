@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.06pt}
+\select@language {english}
+\select@language {english}
+\beamer@sectionintoc {1}{Data flow}{2}{0}{1}
+\beamer@sectionintoc {2}{Implementation}{10}{0}{2}
+\beamer@sectionintoc {3}{L1 MTP distribution}{22}{0}{3}
+\beamer@sectionintoc {4}{Monitoring}{24}{0}{4}
+\beamer@sectionintoc {5}{Outlook}{26}{0}{5}

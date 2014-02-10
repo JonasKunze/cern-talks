@@ -1,0 +1,26 @@
+\section{Ferromagnetismus}
+
+\begin{frame}{Ferromagnetismus}{Kollektives Phänomen}
+	\begin{block}{Mehrheitlich parallele Ausrichtung der Elektronenspins}
+		Parallelstellung zunächst ungünstig, da nach Pauli höhere Energieniveaus besetzt werden müssen
+	\end{block}
+
+	\begin{block}{Austauschwechselwirkung verringert potentielle Energie}<2->
+		Bei wenigen Festkörpern ist parallele Ausrichtung energetisch günstiger
+	\end{block}
+%	\setbeamercovered{invisible}
+%		\begin{figure}
+%			\begin{center}
+%				\includegraphics[width=8cm]{ferromagnetismus}<3->
+%			\end{center}
+%		\end{figure}
+%	\setbeamercovered{transparent}
+\end{frame}
+
+\begin{frame}{Zustandsdichte von Ferromagneten}{}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=10cm]{ferromagnetismus-zustandsdichte}
+		\end{center}
+	\end{figure}
+\end{frame}

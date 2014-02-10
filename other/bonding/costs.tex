@@ -1,0 +1,182 @@
+\section{Some needed components}
+\begin{frame}{Network cards}{}
+	\begin{columns}
+	 	\column{.5\textwidth}
+	 		What you would pay today:
+			\begin{block}{Intel NetEffect E10G81GP}
+				\begin{itemize}
+				  \item low profile SFP+ PCIe x8
+				  \item $\approx$600\euro
+				\end{itemize}
+			\end{block}
+			\begin{block}{Intel PRO/1000 PT 1-4 Port}
+				\begin{itemize}
+				  \item low profile RJ45 PCIe x4
+				  \item $\approx$500\euro (quad port)
+				  \item $\approx$150\euro (dual port)
+				  \item $\approx$70\euro (single port)
+				\end{itemize}
+			\end{block}
+			
+	    \column{.5\textwidth}
+	    	\begin{center}
+				\includegraphics[width=4cm]{E10G81GP} \newline
+				\includegraphics[width=4cm]{intel-quad}\newline
+				\includegraphics[width=4cm]{intel-dual}
+			\end{center}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{HP ProCurve-Switch 2910al-24}{24 port 1G switch}
+	\begin{center}
+		\includegraphics[width=5cm]{2910al-24}
+	\end{center}
+	\begin{itemize}
+	  \item Switch $\approx 1000$\euro
+	\end{itemize}
+	\begin{itemize}
+	  \item SFP+ Module with two ports(2 transceivers included): $\approx
+	  1000$\euro
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{HP ProCurve-Switch 2910al-48}{48 port 1G switch}
+	\begin{center}
+		\includegraphics[width=5cm]{2910al-48}
+	\end{center}
+	\begin{itemize}
+	  \item Switch $\approx 1700$\euro
+	\end{itemize}
+	\begin{itemize}
+	  \item SFP+ Module with two ports(transceiver included): $\approx 1000$\euro
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{HP ProCurve-Switch 6600-24XG}{24 port 10G SFP+ switch}
+	\begin{center}
+		\includegraphics[width=7cm]{6600-24XG}
+	\end{center}
+	\begin{itemize}
+	  \item Switch: $\approx 10000$\euro
+	  \item SFP+ 300m transceiver: $\approx 180$\euro
+	  \item SFP+ 5m direct attach cables: $\approx 150$\euro
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{HP ProCurve-Switch 5412zl}{Modular Switch with 12 slots}
+	\begin{center}
+		\includegraphics[width=3cm]{5412zl}
+	\end{center}
+	\begin{itemize}
+	  \item Switch: $\approx 2000$\euro
+	  \item 4 port SFP+ module: $\approx 1800$\euro
+	  \item 24 port 1G module: $\approx 1500$\euro
+	  \item SFP+ 300m transceiver: $\approx 180$\euro
+	  \item SFP+ 5m direct attach cables: $\approx 150$\euro
+	\end{itemize}
+\end{frame}
+
+
+\section{Four possible options}
+\begin{frame}{Only 10G}
+		\centering \includegraphics[width=9cm]{topologie1}
+		\begin{columns}
+	 	\column{.5\textwidth}
+	 		\centering 6600-24XG:
+			\begin{align*}
+				\text{Switches}:&			& 4*10k \text{\euro} \\
+				\text{Opto transceiver}:& 	& 40*180\text{\euro} \\
+				\text{Direct attach}:&		& 40*150\text{\euro} \\
+				\text{10G cards}:&			& 40*600\text{\euro}
+			\end{align*}
+	    \column{.5\textwidth}
+	   		\centering 5412zl:
+			\begin{align*}
+				\text{Switches}:&			& 2*2k \text{\euro} \\
+				\text{SFP+ Modules}:&		& 20*1.8K \text{\euro}\\
+				\text{Opto transceiver}:& 	& 40*180\text{\euro} \\
+				\text{Direct attach}:&		& 40*150\text{\euro} \\
+				\text{10G cards}:&			& 40*600\text{\euro}
+			\end{align*}
+	\end{columns}
+	\begin{alertblock}{}
+		Same price for both solutions: 77,200\euro
+	\end{alertblock}
+\end{frame}
+
+
+\begin{frame}{1G trunks from seperated switch}
+		\centering \includegraphics[width=8cm]{topologie2}
+		\begin{columns}
+	 	\column{.5\textwidth}
+			\begin{align*}
+				\text{6600-24XG}:&			& 4*10k\text{\euro} \\
+				\text{Opto transceiver}:& 	& 40*180\text{\euro} \\
+				\text{Direct attach}:&		& 36*150\text{\euro} \\
+				\text{10G cards}:&			& 34*600\text{\euro}
+			\end{align*}
+	    \column{.5\textwidth}
+			\begin{align*}
+				\text{2910al-24}:&			& 1k\text{\euro} \\
+				\text{SFP+ dual module}:&	& 1k\text{\euro} \\
+				\text{1G cards}:&			& 13*70\text{\euro}
+			\end{align*}
+	\end{columns}
+	\begin{alertblock}{}
+		Same price for both solutions: 75,910\euro
+	\end{alertblock}
+\end{frame}
+
+
+\begin{frame}{1G trunks from modular switch}
+		\centering \includegraphics[width=8cm]{topologie3}
+		\begin{columns}
+	 	\column{.5\textwidth}
+			\begin{align*}
+				\text{5412zl}:&			& 	2*2k\text{\euro} \\
+				\text{SFP+ Modules}:&		& 19*1.8K\text{\euro}\\
+				\text{Opto transceiver}:& 	& 40*180\text{\euro} \\
+				\text{Direct attach}:&		& 34*150\text{\euro} \\
+				\text{10G cards}:&			& 34*600\text{\euro}
+			\end{align*}
+	    \column{.5\textwidth}
+			\begin{align*}
+				\text{24 port 1G module}:&	& 1.5k\text{\euro} \\
+				\text{1G cards}:&			& 13*70\text{\euro}
+			\end{align*}
+	\end{columns}
+	\begin{alertblock}{}
+		Same price for both solutions: 71,610\euro
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}{Decline in prices of 10G cards}
+	\begin{block}{Super Micro already produces on baord 10G cards}
+		$\approx 300$\euro \ extra for mainboards with on board 10G card
+	\end{block}
+	
+	
+	\begin{columns}
+ 	\column{.5\textwidth}
+ 	\begin{center}
+ 		600 \euro \ per 10G card:
+ 	\end{center}
+		\begin{align*}
+			\text{10G only}:&				& 77.2 \text{k\euro} \\
+			\text{1G trunks with 6600}:& 	& 75.9\text{k\euro} \\
+			\text{1G trunks with 5412zl}:&	& 71.6\text{k\euro}
+		\end{align*}
+    \column{.5\textwidth}
+	 	\begin{center}
+	 		300 \euro \ per 10G card:
+	 	\end{center}
+		\begin{align*}
+			\text{10G only}:&				& 64.0 \text{k\euro} \\
+			\text{1G trunks with 6600}:& 	& 65.7\text{k\euro} \\
+			\text{1G trunks with 5412zl}:&	& 61.4\text{k\euro}
+		\end{align*}
+	\end{columns}
+	
+	
+\end{frame}

@@ -1,0 +1,43 @@
+\newcommand{\entspricht}{\mathrel{\widehat{=}}}
+
+
+\renewcommand{\theequation}	{\thesubsection.\arabic{equation}} 
+\renewcommand{\thefigure}	{\thesubsection.\arabic{figure}}
+\renewcommand{\thetable}	{\thesubsection.\arabic{table}}
+
+\makeatletter
+	\@addtoreset{equation}{section}
+  	\@addtoreset{figure}{section}
+  	\@addtoreset{table}{section}
+
+  	\renewcommand{\@fnsymbol}[1]{\ensuremath{%
+  	\ifcase#1\or *\or **\or {**}*\or
+	\mathsection\or \mathparagraph\or \|\or \star\or
+	\star\star\or {\star\star}\star \else\@ctrerr\fi}}
+   	%\ renewcommand macht bei Thanks das Dagger zu **
+\makeatother
+
+
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item[]}{\end{list}}
+
+
+
+\newcommand{\beginbackup}{
+   \newcounter{framenumbervorappendix}
+   \setcounter{framenumbervorappendix}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+   \addtocounter{framenumbervorappendix}{-\value{framenumber}}
+   \addtocounter{framenumber}{\value{framenumbervorappendix}} 
+}
+
+

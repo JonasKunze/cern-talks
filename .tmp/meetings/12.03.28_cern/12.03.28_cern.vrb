@@ -1,0 +1,10 @@
+\frametitle {L2 trigger}
+\begin{lstlisting}[frame=trBL,caption={}]{hallowelt}
+const uint8_t TriggerProcessor::computeL2(Event* event) {
+LKREvent lkrEvent = event->getLKrEvent(crateID, CREAMID);
+    u_char* rawData = e->getDataWithHeader();
+...
+return L2TriggerWord;
+}
+\end{lstlisting}
+

@@ -1,0 +1,473 @@
+\section{Röntgenabsorptionsspektroskopie}
+%\begin{frame}{Örtlich- und zeitlich aufgelöste Messungen erforderlich}{}
+%	\begin{block}{}
+%		Magnetische Eigenschaften von Übergangsmetallen (Fe, Co und Ni) hauptsächlich durch 3d Valenzelektronen bestimmt \\
+%		\begin{ergo}
+%			Messe Anzahl von $\uparrow$- und $\downarrow$ 3d-Elektronen (Zustandsdichte)
+%		\end{ergo}
+%	\end{block}
+%\end{frame}
+
+\subsection{XAS}
+\begin{frame}{Röntgenabsorptionsspektroskopie XAS}{}
+%Im Bändermodell sind das spin up - und das spin down -Band aufgrund der Austauschwechselwirkung aufgespalten und um den Betrag der
+% Austauschaufspaltung gegeneinander verschoben. Da alle Zustände bis zur FERMI-Energie besetzt (für $T\to0$) und darüber alle frei sind, gibt es
+% mehr spin up - als spin down -Elektronen - daher besitzt die Probe ein magnetisches Moment. 
+	\begin{block}{}
+		Weiche Röntgenstrahlung zwischen 50eV and 2000eV
+	\end{block}
+
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=8cm]{xas}
+			\caption{Absorptionsspektrum einer Cu-Fe-Ni Probe \tiny{\textcolor{gray}{[Stan]}}}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Röntgenabsorptionsspektroskopie XAS}{}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=11cm]{l2l3-kanten}
+			\caption{Termschema und Absorptionsspektrum von Eisen}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+% \begin{frame}{Magnetischer Dichroismus}{}
+% 	%Durch das anregende rechtszirkular polarisierte Photon
+% 	% wird ein spin down -Elektron in das unbesetzte spin down -Band oberhalb der FERMI-Energie angehoben, während ein linkszirkular polarisiertes Photon
+% 	% ein spin up -Elektron in das unbesetzte spin up -Band anregen würde. Da im spin down -Band mehr freie Plätze sind als im spin up -Band, ist nach
+% 	% FERMIS goldener Regel auch der Absorptionskoeffizient von rechtszirkular polarisierter Strahlung größer als von linkszirkular polarisierter - die
+% 	% Absorption hängt von der Helizität des Photons (seinem Spin) ab.
+% 	
+% 	% Der Dichroismus bekam seinen Namen (,,Zweifarbigkeit``) vom der unterschiedlichen Farbe, mit der das Medium in Transmission erscheint, wenn man es
+% 	% mit linear polarisiertem polychromatischem Licht bestrahlt. Der unterschiedliche Farbeindruck wird von der Abhängigkeit der Dispersionskurven von
+% 	% Polarisationszustand des Lichtes hervorgerufen. 
+% 		\begin{block}{Dichroismus}
+% 	    	Abhängigkeit der Lichtabsorption von der Polarisation der einstrahlenden elmag. Welle (hier links- oder rechtszirkular) \\
+% 	    \end{block}
+% 	
+% 	 % Hochenergetische Variante des magneto-optischen Kerreffektes
+% 	 % magneto-optischer Kerreffekt Interessant für magneto-optischen Datenträgern (Mini Disc) 
+% 	 % Der magnetooptische Kerr-Effekt sollte nicht mit dem elektrooptischen Kerr-Effekt  verwechselt werden, bei dem elektrische Felder die
+% 	 % Polarisationsebene drehen. Der magnetooptische Kerr-Effekt wurde 1876 von John Kerr entdeckt.
+% 	 \begin{figure}[H]
+% 		\begin{center}
+% 			\includegraphics[width=7cm]{dichroism}
+% 			\caption{Zirkulardichroismus von Eisen \tiny{\textcolor{gray}{[Eim]}}}
+% 		\end{center}
+% 	\end{figure}
+% \end{frame}
+
+
+\subsection{XMCD}
+
+
+\begin{frame}{\textbf{X}-ray \textbf{M}agnetic \textbf{C}ircular \textbf{D}ichroism}{}
+ %Experimenteller beweis für drehimpuls: 1936 durch Richard A. Beth	
+ 	\begin{block}{Dichroismus}
+    	Abhängigkeit der Lichtabsorption von der Polarisation der einstrahlenden elmag. Welle (hier links- oder rechtszirkular) \\
+    \end{block}
+
+	\begin{block}{Zirkular polarisiertes Licht hat einen Bahndrehimpuls!}<2->
+		Bahndrehimpuls wird an Elektron übertragen (Dipolübergang):
+		\begin{align*}
+			\Delta l&= \pm 1	&	\Delta j &= 0, \pm 1 \\
+			\Delta m_l &= m_{\gamma}	&	\Delta m_j &= m_{\gamma}	& \Delta m_s=0
+		\end{align*}
+	\end{block}
+\end{frame}
+
+
+\begin{frame}{\textbf{X}-ray \textbf{M}agnetic \textbf{C}ircular \textbf{D}ichroism}{}
+ 	\setbeamercovered{invisible}
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=9cm]{xmcd-termschema1}<1>
+				\includegraphics[width=9cm]{xmcd-termschema2}<2>
+				\includegraphics[width=9cm]{xmcd-termschema3}<3>
+				\includegraphics[width=9cm]{xmcd-termschema4}<4>
+			\end{center}
+		\end{figure}
+	\setbeamercovered{transparent}
+\end{frame}
+
+\begin{frame}{\textbf{X}-ray \textbf{M}agnetic \textbf{C}ircular \textbf{D}ichroism}{}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[height=7cm]{xmcd-theo}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+% in Halbleiter-Kristallen beobachtet, dass sich Spin-Zustände über makroskopische Längen von etwa 0.1 mm kohärent bewegen können.
+
+
+% Its foremost strengths are the element-specific, quantitative separation and determination of spin and orbital magnetic moments and their
+% an-isotropies
+
+%L-edge absorption studies (2p to 3d transitions)
+
+
+% Untersucht werden (L3,L2) - Übergänge von 2p-Zuständen in die austauschaufgespaltenen 3d-
+% Zustände, welche für den Magnetismus der Übergangsmetalle verantwortlich sind. Aufgrund
+% der Spin-Bahn-Wechselwirkung ist das 2p-Nivau in die Zustände 2p1/2 und 2p3/2 aufgespalten.
+% Damit gibt es für die Quantenzahl mj für das 2p1/2-Niveau zwei Werte, nämlich +1/2 und -1/2
+% und für das 2p3/2–Niveau außer diesen beiden Werten noch die Werte +3/2 und -3/2. Damit
+% besitzt das 2p3/2–Niveau vier Zustände, während das das 2p1/2-Niveau nur zwei Zustände
+% besitzt. Die erwartete Absorptionsausbeute für das 2p3/2 –Niveau ist also höher als für das
+% andere. Erwarten würde man ein Signal doppelter Intensität. Da aber noch andere Faktoren,
+% z.B. die Energieauflösung der Apparatur, eine Rolle spielen, sieht der reale Verlauf etwas
+% anders aus.
+% 12
+% Die für die Übergänge vom 2p3/2 –Niveau ins 3d-Band charakteristische Kante im
+% Absorptionsspektrum wird als L3-Kante, entsprechend die des 2p1/2-Niveau als L2-Kante
+% bezeichnet.
+
+
+\begin{frame}{XMCD}{}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=9cm]{xmcd}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+
+\subsection{Röntgenoptik}
+\begin{frame}{Hoher Anspruch an die Röntgenstrahlung}{}
+	\begin{block}{Elementselektive Mikroskopie}
+		\begin{itemize}
+		  \item Durchstimmbare Photonenenergie (Bereich ca. 50eV bis 2000eV)
+		  \item Extrem hohe Intensität nötig
+		\end{itemize}		
+	\end{block}
+
+	\setbeamercovered{invisible}
+		\begin{columns}<2->
+		 	\column{.4\textwidth}
+		 	\begin{figure}[H]
+				\begin{exampleblock}{Synchrotronstrahlung!}
+					Es gibt z.Zt. 44 Synchrotronlaboratorien Weltweit, 5 in Deutschland
+				\end{exampleblock}
+			\end{figure}
+		    \column{.6\textwidth}
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=\textwidth]{synchrotrondichte}
+					\caption{Globale Synchrotrondichte  \tiny{\textcolor{gray}{[Schu]}}}
+				\end{center}
+			\end{figure}
+		\end{columns}
+	\setbeamercovered{transparent}
+\end{frame}
+
+\begin{frame}{Zirkular Polarisierte Röntgenstrahlung}{}
+	\begin{exampleblock}{Helikale Undulatoren im Synchrotron}
+		Erreichte Intensität ca. $10^8$ mal größer als Röntgenröhren
+	\end{exampleblock}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=\textwidth]{undulator}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Röntgen-Linsen}{}
+% 		Der äußerste Ring kann trotz des hohen Aspektverhältnisses elektronenlithographisch mit einer Wandstärke von 20 nm hergestellt werden kann und
+% entspricht der Auflösung des Systems.
+	\begin{block}{Fresnel-Zonenplättchen}
+		Konzentrische, nach außen bis auf 20 nm dünner werdende Zylinder\\
+	\end{block}
+	\begin{figure}[H]
+		\begin{center}
+        %(c) http://www.helmholtz-berlin.de/forschung/grossgeraete/mikroskopie/arbeitsgebiete/entwicklung-von-beugender-optik/index_en.html
+			\includegraphics[width=8cm]{fresnel}
+			\caption{Querschnitt eines Zonenplättchens  \tiny{\textcolor{gray}{Foto: [Eim]}}}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Fresnel-Zonenplättchen}{}
+	% http://x-ray-optics.eu/index.php?option=com_content&view=article&id=22&Itemid=125&lang=de
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=10cm]{fresnel-herleitung}
+		\end{center}
+	\end{figure}
+
+	\begin{columns}
+	 	\column{.5\textwidth}
+			\begin{block}{}<2->
+				\begin{align*}
+					\Delta_1 &= \sqrt{g^2+r_n^2}-g \\
+					\Delta_2 &= \sqrt{b^2+r_n^2}-b
+				\end{align*}
+			\end{block}
+	    \column{.5\textwidth}
+			\begin{block}{Konstruktive Interferenz}<3->
+				\begin{align*}
+					\Delta_{total} &= \Delta_1+\Delta_2 = \frac{n\lambda}{2}\\
+				\end{align*}
+			\end{block}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Fresnel-Zonenplättchen}{}
+	\begin{block}{}
+		\begin{align*}
+			&\Delta_{total} = \Delta_1+\Delta_2 = \frac{n\lambda}{2}\\
+			&\Rightarrow \sqrt{g^2+r_n^2}-g+ \sqrt{b^2+r_n^2}-b = \frac{n\lambda}{2} \\
+			&\Rightarrow r_n^2 = \frac{\frac{n^4\lambda^4}{16}+\frac{n^3\lambda^3(g+b)}{2}+n^2\lambda^2(gb+(g+b)^2)+4n\lambda gb (g+b)}{4(g+b)(n\lambda
+					+(g+b))+n^2\lambda^2}
+		\end{align*}
+	\end{block}
+
+	\begin{columns}
+	 	\column{.5\textwidth}
+			\begin{block}{$\lambda \ll g,b$}<2->
+				\begin{align*}
+					r_n^2 &\approx n\lambda \frac{gb}{g+b} = n\lambda f\\
+					mit\quad \frac{1}{f} &= \frac{1}{g}+\frac{1}{b}					
+				\end{align*}
+			\end{block}
+	    \column{.5\textwidth}
+			\begin{block}{Ringbreite}<3->
+				\begin{align*}
+					dr_n = \frac{\partial r_n}{\partial n} = \frac{r_n}{n}
+				\end{align*}
+			\end{block}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Fresnel-Zonenplättchen}{}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=9cm]{fresnel-ordnungen}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Fresnel-Zonenplättchen}{Ortsauflösung}
+	\begin{block}{Rayleigh-Kriterium: maximale Ortsauflösung}
+    	
+    	\begin{columns}
+		 	\column{.4\textwidth}
+		    	\begin{figure}[H]
+						\includegraphics[width=3cm]{rayleigh}
+				\end{figure}
+		    \column{.6\textwidth}
+		    	Für eine monochromatische Einstrahlung gilt: 
+				\begin{align*}
+					\delta = 1,22 \frac{dr_N}{m}
+				\end{align*}
+
+% 				\begin{align*}
+% 					\delta = 1,22\frac{\lambda}{2 NA} = 1,22 \frac{dr_N}{m}
+% 				\end{align*}
+		\end{columns}
+	\end{block}
+% 	\begin{block}{Abbe-Theorie: Numerische Apertur}<2->
+%     %Die numerische Apertur (Formelzeichen NA, n.A. oder AN) beschreibt das Vermögen eines optischen Elements, Licht zu fokussieren. Bei Objektiven
+%     % bestimmt sie die minimale Größe des in seinem Fokus erzeugbaren Lichtflecks. Insbesondere ist die NA eine das Auflösungsvermögen wesentlich
+%     % bestimmende Größe. Genauer ergibt sich die numerische Apertur aus dem Produkt des Sinus des halben objektseitigen Öffnungswinkels
+%     % (Akzeptanzwinkel) $\Theta_E  und dem Brechungsindex n des Immersionsmediums (Material zwischen Objektiv und Fokus):
+% 		Kenngröße für die "`Fokussierbarkeit"' eines optischen Elements 
+% 		\begin{align*}
+% 			NA = n \cdot sin(\Theta_O) \approx 1\cdot tan(\Theta_O) = \frac{r_N}{f} = \frac{m\lambda}{2 \cdot dr_N}
+% 		\end{align*}
+% 	\end{block}
+\end{frame}
+
+\begin{frame}{Fresnel-Zonenplättchen}{Ortsauflösung}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=5cm]{fresnel-foto-aussen}
+			\caption{Ni Zonenplättchen Uni Göttingen 2000 ($dr_N=22nm$)  \tiny{\textcolor{gray}{[Eim]}}}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+\subsection{MTXM}
+\begin{frame}{Magnetische Röntgentransmissionsmikroskopie}{MTXM}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=11cm]{mtxm}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Magnetische Röntgentransmissionsmikroskopie}{MTXM}
+	\begin{block}{Erste Bilder am Bessy I 1996: }
+		\begin{figure}[H]
+			\begin{center}
+            	\includegraphics[width=5cm]{mtxm-linkszirkular}
+				\includegraphics[width=5cm]{mtxm-rechtszirkular}
+			\end{center}
+			\caption{Erste MTXM Aufnahmen von $Fe_{72} Gd_{28}$ (links und rechts-polarisierte Einstrahlung) \tiny{\textcolor{gray}{[Fis]}}}
+		\end{figure}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Magnetische Röntgentransmissionsmikroskopie}{MTXM}
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=6cm]{mammos}
+		\caption{\textbf{M}agnetic \textbf{A}mplifying \textbf{M}agneto-\textbf{O}ptical \textbf{S}ystem \tiny{\textcolor{gray}{[Schu]}}}
+	\end{center}
+\end{figure}
+\end{frame}
+
+\subsection{STXM}
+\begin{frame}{Rasterndes Verfahren}{STXM}
+	\begin{block}{\textbf{S}canning \textbf{T}ransmission \textbf{X}-ray \textbf{M}icroscope}
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=10cm]{stxm}
+			\end{center}
+		\end{figure}
+	\end{block}
+\end{frame}
+
+
+\begin{frame}{STXM}{Vortice}
+	\begin{columns}
+	 	\column{.5\textwidth}
+			\begin{block}{Advanced Light Source in Berkeley}<2->
+				2 Elektronen-bunches: 70ps breit, 328ns Abstand
+			\end{block}
+			\begin{block}{MPI Stuttgart 2004}<3->
+				$400ps$ Strompuls in $20 ps$-Schritten vor Röntgenpuls
+			\end{block}
+	    \column{.5\textwidth}
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=5cm]{stxm-microcoil}
+					\caption{Mikrospule um eine $16\mu m^2$ ferromagn. Schicht auf $100 nm ~ Si_3N_4$ Membran
+					\tiny{\textcolor{gray}{[Stoll]}}}
+				\end{center}
+			\end{figure}	    
+	\end{columns}
+\end{frame}
+
+\begin{frame}{STXM}{Vortice}
+	\setbeamercovered{invisible}
+		\begin{columns}
+		 	\column{.5\textwidth}
+				\begin{figure}[H]
+					\begin{center}
+						\includegraphics[width=5cm]{stxm-vortex}
+						\caption{Simulierte (erste Reihe) und gemessene Magnetisierung \tiny{\textcolor{gray}{[Stoll]}}}
+					\end{center}
+				\end{figure}
+		    \column{.5\textwidth}<2->
+				\begin{figure}[H]
+					\begin{center}
+						\includegraphics[width=3cm]{vortex}
+						\caption{Vortice als neues Speichermedium?}
+					\end{center}
+				\end{figure}	    
+		\end{columns}
+	\setbeamercovered{transparent}
+	\begin{block}{}<3->
+		\tiny Vidoes (H. Stoll):  http://www.nature.com/nature/journal/v444/n7118/suppinfo/nature05240.html
+	\end{block}
+\end{frame}
+
+\begin{frame}{Zusammenfassung}{}
+	\begin{block}{Magnetische Transmissionsröntgenmikroskopie}
+		\begin{itemize}
+			\pro Hohe laterale Auflösung: $20nm$ bereits erreicht
+			\pro Elementselektivität
+			\pro Hohe zeitliche Auflösung (reversible Prozesse)
+			\contra Hoher Anspruch an die Probe
+			\contra Synchrotronstrahlung benötigt
+			\contra Nicht für senkrecht zum Strahl magnetisierte Proben geeignet
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+% 
+% \section{Alternative Verfahren}
+% 
+% \subsection{XMCD-PEEM}
+% \begin{frame}{Photoemissionsmikroskopie}{XMCD-PEEM}
+% 	\begin{block}{Photoelektronen durch zirkular polarisierte Röntgenstrahlen}
+% 		Polarisationsabhängige Auslösewahrscheinlichkeit\\
+% 		\begin{ergo}
+% 	    	Elektronenmikroskop zur Detektion
+% 	    \end{ergo} 
+% 	\end{block}
+% 
+% 	\begin{figure}[H]
+% 		\begin{center}
+% 			\includegraphics[width=5cm]{peem}
+% 		\end{center}
+% 	\end{figure}
+% \end{frame}
+% 
+% \begin{frame}{Photoemissionsmikroskopie}{XMCD-PEEM}
+% 	\begin{block}{}
+%     %Geringe Austrittstiefe der Sekundärelektronen
+% 		\begin{itemize}
+% 		  \item Gut geeignet für Untersuchungen von Oberflächen
+% 		  \item Optimal für parallel zur Oberfläche magnetisierte Schichten
+% 		  \item Auflösung bis $3nm$ erreicht %http://unicorn.mcmaster.ca/highlights/capers/capers.html
+% 		\end{itemize}
+% 	\end{block}
+% \begin{figure}[H]
+% 	\begin{center}
+% 		\includegraphics[height=4cm]{peem-example}
+% 		\caption{Pb bedampftes Si \tiny{\textcolor{gray}{[Mcm]}}}
+% 	\end{center}
+% \end{figure}
+% \end{frame}
+% 
+% \subsection{MFM}
+% \begin{frame}{Magnetkraftmikroskopie (MFM)}{}
+% %-Auflösung: ca. 50 nm
+% %-Schlechte/Keine Zeitauflösung!
+% %+Keine teure Synchrotronstrahlung nötig
+% 	\begin{block}{Spezielle Rasterkraftmikroskopie (50nm Auflösung erreicht)}
+%    		ferromagnetischer Abtastkopf, zwei Durchläufe pro Bildzeile:
+%     	\begin{itemize}
+% 		  \item 1: Aufnahme des Höhenprofils
+% 		  \item 2: Feldstärkenmessung (konstanter Abstand $<$ 100nm)
+% 		\end{itemize}
+% 	\end{block}
+% 	\begin{figure}[H]
+% 		\begin{center}
+% 			\includegraphics[width=7cm]{mfm-tape}
+% 			\caption{Topographische und magnetische Karte eines Magnetbandes \tiny{\textcolor{gray}{[Sci]}}}
+% 		\end{center}
+% 	\end{figure}
+% \end{frame}
+% 
+% \subsection{Kerr-Mikroskopie}
+% \begin{frame}{Kerr-Mikroskopie}{}
+% 	\begin{block}{Magnetooptischer Kerreffekt}
+% 		Magnetisierung beeinflusst Polarisationszustand der Reflexion
+% 		\begin{itemize}
+% 		  \item Linear polarisierte Einstrahlung
+% 		  \item Elliptisch polarisierte Reflexion (Kerrwinkel) 
+% 		\end{itemize}
+% 	\end{block}
+% 
+% 	\begin{block}{Reflexion von Licht im optischen Bereich}
+% 		\begin{itemize}
+% 		  \item Geringe Auflösung von ca. $1\mu m$
+% 		  \item Nur Oberflächen betrachtbar
+% 		\end{itemize}
+% 	\end{block}
+% \end{frame}
+% 
+% \begin{frame}{Kerr-Mikroskopie}{}
+% 	\begin{figure}[H]
+% 		\begin{center}
+% 			\includegraphics[width=10cm]{kerr-mikroskopie}
+% 			\caption{Magnetische Domänen einer Fe-Ni-Oberfläche  \tiny{\textcolor{gray}{[Kerr]}}}
+% 		\end{center}
+% 	\end{figure}
+% \end{frame}

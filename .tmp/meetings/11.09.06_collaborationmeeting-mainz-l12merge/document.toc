@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.06pt}
+\select@language {english}
+\select@language {english}
+\beamer@sectionintoc {1}{Proposal: merge L1 and L2 farm}{1}{0}{1}
+\beamer@sectionintoc {2}{Proposal for a farm framework}{10}{0}{2}

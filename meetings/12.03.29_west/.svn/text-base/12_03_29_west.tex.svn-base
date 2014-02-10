@@ -1,0 +1,75 @@
+\input{../../common/header.tex}
+\usepackage[ngerman]{babel}
+\usepackage{bibgerm}
+
+\title{How to analyze 12 GBps data online}
+\author{Jonas Kunze}
+\date{29.03.2012}
+
+\institute[{Universität Mainz}]{
+	\inst{} University of Mainz}
+\titlegraphic{\includegraphics[height=3cm]{penguins}}
+\logo{\includegraphics[width=2cm]{na62-logo}}
+\subject{NA62 online pc-farm design and implementation}
+\keywords{NA62,computing,multithreading,trigger,c++,boost,asio,10g}
+
+ \AtBeginSection[]{
+ \begin{frame}
+ \tableofcontents[currentsection]
+ \end{frame}
+ }% AtBeginSection
+
+\begin{document}
+	\begin{frame}[plain]{Jonas Kunze: IT affine physicist}{}
+		\begin{center} 
+			\includegraphics[width=\textwidth]{myTopics}
+		\end{center}
+	\end{frame}
+
+  	\frame{
+  		\titlepage
+  		\vspace{-1cm}
+  		\includegraphics[width=0.2\textwidth]{bmbf-logo}
+  		\vspace{1cm}
+  	}
+  	
+  	\frame{\tableofcontents}
+  	\input{intro.tex}
+  	\input{trigger.tex}
+  	\input{performance.tex}
+  	\input{outlook.tex}
+
+	\begin{frame}{}
+		\begin{center}
+			\textbf{Thank you for the invitation!}
+		\end{center} 
+	\end{frame}
+
+	\beginbackup
+	\section*{Backup}
+	
+	\begin{frame}{Tree topology (Hexapus)}{}
+		\begin{center} 
+			\includegraphics[width=0.9\textwidth]{whole-farm-l12merged-tree}
+		\end{center}
+	\end{frame}
+
+	\begin{frame}{Packet loss}{}
+		\begin{center} 
+			\includegraphics[width=0.9\textwidth]{backup/packetloss}
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}{}
+		\begin{center}
+			\includegraphics[height=8cm]{backup/24threads-switch_2097152_tcp-heat}
+		\end{center}
+	\end{frame}
+	\begin{frame}{}
+		\begin{center}
+			\includegraphics[height=8cm]{backup/24threads-switch_2097152_udp-heat}
+		\end{center} 
+	\end{frame}
+	%	\input{protocols.tex}
+	\backupend
+\end{document}

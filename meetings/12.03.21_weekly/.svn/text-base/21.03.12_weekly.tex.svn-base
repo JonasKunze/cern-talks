@@ -1,0 +1,74 @@
+\input{../../common/header.tex}
+\usepackage[ngerman]{babel}
+\usepackage{bibgerm}
+
+
+
+
+
+%
+% Paket um LIstings sauber zu formatieren.
+%
+\usepackage{listings}
+
+% Umlaute für listings
+ \lstset{
+  literate= {Ö}{{\"O}}1 {Ä}{{\"A}}1 {Ü}{{\"U}}1 {ß}{{\ss}}2 {ü}{{\"u}}1
+ {ä}{{\"a}}1 {ö}{{\"o}}1
+ }
+ 
+ 
+\lstloadlanguages{C++,sh}
+
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.6,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+
+\renewcommand{\lstlistingname}{Quell­code}
+
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+
+
+\lstset{%
+  language=C++,
+  basicstyle=\ttfamily,
+  commentstyle=\itshape\color{darkgreen},
+  keywordstyle=\bfseries\color{darkblue},
+  stringstyle=\color{darkred},
+  morecomment=[s][\color{javadocblue}]{/**}{*/},
+  showspaces=false,
+  showtabs=false,
+  columns=fixed,
+  numbers=left,
+  frame=none,
+  numberstyle=\tiny,
+  breaklines=true,
+  showstringspaces=false,
+  xleftmargin=1cm,
+  captionpos=b,
+  otherkeywords={$, \{, \}, \[, \], class}
+}%s
+
+
+
+
+
+\title{NA62 online pc farm design and implementation}
+\author{Jonas Kunze}
+\date{05.12.2011}
+
+\institute[{Universität Mainz}]{
+	\inst{} Universität Mainz}
+\titlegraphic{\includegraphics[height=3cm]{penguins}}
+%\logo{\includegraphics[width=2cm]{na62-logo}}
+\subject{NA62 online pc-farm design and implementation}
+\keywords{NA62,computing,multithreading,trigger,c++,boost,asio,10g}
+
+\begin{document}
+  	%\frame{\titlepage}
+  	%\frame{\tableofcontents}
+  	\input{pages.tex}
+\end{document}

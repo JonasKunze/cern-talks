@@ -1,0 +1,11 @@
+\section{Overview}
+\begin{frame}{The online farms}{}
+	\begin{center} 
+		\includegraphics[height=7cm]{whole-farm}
+	\end{center} 
+\end{frame}
+\begin{frame}{Data rates}{}
+	\begin{center} 
+		\includegraphics[height=7cm]{datarates}
+	\end{center} 
+\end{frame}

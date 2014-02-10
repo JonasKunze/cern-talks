@@ -1,0 +1,50 @@
+\section{Proactor design pattern}
+\subsection{Pros and cons}
+
+\lstloadlanguages{C++}
+\lstset{language=C++, frameround=fttt, breaklines=true, tabsize=2,
+keywordstyle=\color{blue},labelstyle=\tiny, labelstep=5, firstlabel=1, labelsep=5pt, numbers=left}
+
+\begin{frame}{boost::asio}
+	\begin{block}{Why I want to use boost::asio}
+		\begin{itemize}
+		  \item Less code
+		  \item More readable code
+		  \item Proactor design pattern
+		  \item Don't want to reinvent the wheel!
+		\end{itemize}
+	\end{block}
+	\begin{exampleblock}{Proactor design pattern (Think asynchronous!)}
+		\begin{itemize}
+		  \item Almost no synchronization needed
+		  \item Thread per core, not per connection
+		  \item Less context switching $\Rightarrow$ better performance
+		\end{itemize}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Sample program}
+\framesubtitle{Proactor design pattern: Initiator}
+\begin{lstlisting}[frame=trBL,caption={}]{hallowelt}
+boost::asio::io_service io_service;
+udp::socket socket_(io_service, udp::endpoint(udp::v4(), port_));
+socket_.async_receive(boost::asio::buffer(buffer_),boost::bind(&udp_server::handle_receive,this, boost::asio::placeholders::bytes_transferred)); 
+for (int i=0; i < 24; i++) 
+		boost::thread t(boost::bind(&boost::asio::io_service::run,&io_service));
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Sample program}
+\framesubtitle{Proactor design pattern: Completion Handler}
+
+\begin{lstlisting}[frame=trBL,caption={}]{hallowelt}
+handle_receive(const size_t& bytesReceived) {
+	char* data = buffer_;
+	buffer_ = malloc(9000);
+	socket_.async_receive(boost::...
+	DO SOME WORK WITH data HERE!!!
+}
+\end{lstlisting}
+\end{frame}

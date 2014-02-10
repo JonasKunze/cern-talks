@@ -1,0 +1,33 @@
+\appendix % Anang
+
+\begin{frame}{Kernspeicher}{1950 bis Ende 70er}
+
+% Ferrit ist die Bezeichnung für kristallographische Modifikationen des Eisens, die ein kubisch-raumzentriertes  Kristallgitter bilden.
+%Ferrite sind elektrisch schlecht oder nicht leitende ferrimagnetische keramische Werkstoffe  aus Eisenoxid Hämatit  (Fe2O3), seltener Magnetit 
+% (Fe3O4) und weiteren Metalloxiden. Ferrite  leiten im nicht gesättigten Fall den magnetischen Fluss sehr gut und haben eine hohe magnetische
+% Leitfähigkeit (Permeabilität). Diese Werkstoffe weisen somit im Regelfall einen kleinen magnetischen Widerstand auf.
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=9cm]{kernspeicher}
+		\end{center}
+	\caption{Speicherung in Ferritkernen \tiny{\textcolor{gray}{[http://de.wikipedia.org/wiki/Kernspeicher]}}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Kernspeicher}{1950 bis Ende 70er}
+	\begin{block}{Schreibvorgang}
+    	\centering
+		\begin{itemize}
+		  \item Strom $I_K$ benötig für Koerzitivfeldstärke
+		  \item $I_K$ auf Zeilen- und Spaltendraht verteilt
+		\end{itemize}
+    \end{block}
+
+	\begin{block}{Lesevorgang: destruktiv, wahlfrei}<2->
+    	Spannungsimpuls beim schreiben in Leseleitung induziert:
+		\begin{description}
+		  \item[Hoher Impuls:] Magnetisierung wurde umgepolt
+		  \item[Kleiner Impuls:] Keine Umpolung stattgefunden
+		\end{description}
+    \end{block}
+\end{frame}

@@ -1,0 +1,36 @@
+\section{Test system}
+\subsection{Components bought for testing}
+
+\begin{frame}{Special hardware purchased for performance tests}{}
+	\begin{block}{High performance 12-core PC Dell R710}
+		2*6 Cores @ 2.93GHz (3.33GHz turbo) \\
+		24GB memory @ 1333MHz\\
+	\end{block}
+	
+	\begin{block}{Low power 12-core PC Dell R710}
+		2*6 Cores @ 2.26GHz (2.8GHz turbo)\\
+		24GB memory @ 1333MHz\\
+	\end{block}
+
+	\begin{block}{48 x 1G-port switch Dell PowerConnect 6248}
+		Two SFP+ (10 Gbps) modules (4 ports total)\\
+	\end{block}
+\end{frame}
+
+\begin{frame}{Test farm @ Mainz}{}
+	\begin{columns}
+	 	\column{.3\textwidth}
+	 		\begin{center} 
+				\includegraphics[height=7cm]{rack-overview}
+			\end{center}
+	    \column{.65	\textwidth}
+	    	\begin{block}{2 big 12 core machines for farm simulation} 
+	    		Connected via 10Gbps SFP+ to the switch and to each other
+			\end{block}
+			\begin{block}{11 L0 simulator PCs (1-4 cores)}
+				Diskless \\
+				21 Cores total \\
+				21 * 1Gbps links connected to the switch (up to 4Gbps per PC)
+			\end{block}
+	\end{columns}
+\end{frame}

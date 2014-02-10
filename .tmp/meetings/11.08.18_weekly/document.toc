@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.06pt}
+\select@language {ngerman}
+\select@language {ngerman}
+\beamer@sectionintoc {1}{Switch vs. direct attached link}{1}{0}{1}

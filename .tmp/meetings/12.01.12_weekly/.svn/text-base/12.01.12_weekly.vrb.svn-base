@@ -1,0 +1,19 @@
+\frametitle {Active and passive polling}
+\begin{lstlisting}[frame=trBL,caption={}]{hallowelt}
+while(true){
+    if(pfRing.getNextSocket(data)>0){
+        // do something
+    }
+}
+\end{lstlisting}
+
+
+\begin{lstlisting}[frame=trBL,caption={}]{hallowelt}
+while(true){
+    if(pfRing.getNextSocket(data)>0){
+        // do something
+    } else {
+        // wait for interrupt
+    }
+}
+\end{lstlisting}

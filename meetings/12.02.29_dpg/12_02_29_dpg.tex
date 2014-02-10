@@ -1,0 +1,57 @@
+\input{../../common/header.tex}
+\usepackage[ngerman]{babel}
+\usepackage{bibgerm}
+
+
+\title{NA62 Online PC Farm Design and Implementation}
+\author{Jonas Kunze}
+\date{29.02.2012}
+
+\institute[{Universität Mainz}]{
+	\inst{} University of Mainz}
+\titlegraphic{\includegraphics[height=3cm]{penguins}}
+\logo{\includegraphics[width=2cm]{na62-logo}}
+\subject{NA62 online pc-farm design and implementation}
+\keywords{NA62,computing,multithreading,trigger,c++,boost,asio,10g}
+
+\begin{document}
+  	\frame{
+  		\titlepage
+  		\vspace{-1cm}
+  		\includegraphics[width=0.2\textwidth]{bmbf-logo}
+  		\vspace{1cm}
+  	}
+  	\frame{\tableofcontents}
+  	\input{intro.tex}
+  	\input{tdaq.tex}
+  	\input{merging.tex}
+  	\input{performance.tex}
+  	\input{outlook.tex}
+
+	\begin{frame}{}
+		\begin{center}
+			\textbf{Thank you!}
+		\end{center} 
+	\end{frame}
+
+	\beginbackup
+	\section*{Backup}
+	\begin{frame}{Tree topology (Hexapus)}{}
+		\begin{center} 
+			\includegraphics[width=0.9\textwidth]{whole-farm-l12merged-tree}
+		\end{center} 
+	\end{frame}
+
+	\begin{frame}{}
+		\begin{center}
+			\includegraphics[height=8cm]{backup/24threads-switch_2097152_tcp-heat}
+		\end{center}
+	\end{frame}
+	\begin{frame}{}
+		\begin{center} 
+			\includegraphics[height=8cm]{backup/24threads-switch_2097152_udp-heat}
+		\end{center} 
+	\end{frame}
+	\input{protocols.tex}
+	\backupend
+\end{document}

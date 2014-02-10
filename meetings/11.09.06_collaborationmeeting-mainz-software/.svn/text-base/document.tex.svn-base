@@ -1,0 +1,49 @@
+\input{../../common/header.tex}
+\usepackage[ngerman]{babel}
+\usepackage{bibgerm}
+
+\title{Design and installation of the online PC farm}
+\author{Jonas Kunze}
+\date{\today}
+
+\institute[{Universität Mainz}]{}
+%\titlegraphic{\includegraphics[height=3cm]{atlas}}
+%\logo{\includegraphics[width=2cm]{atlas}}
+
+
+\usepackage{listings}
+\lstloadlanguages{[GNU]C++,sh}
+
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.6,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+
+\renewcommand{\lstlistingname}{Quell­code}
+
+\lstset{%
+  language=C++,
+  basicstyle=\ttfamily,
+  commentstyle=\itshape\color{darkgreen},
+  keywordstyle=\bfseries\color{darkblue},
+  stringstyle=\color{darkred},
+  showspaces=false,
+  showtabs=false,
+  columns=fixed,
+  numbers=left,
+  frame=none,
+  numberstyle=\tiny,
+  breaklines=true,
+  showstringspaces=false,
+  xleftmargin=1cm,
+  captionpos=b
+}%
+
+
+
+\subject{Exp. Bestimmung der elektronischen Zustandsdichte von Spintronik Materialien}
+\keywords{Spintronics, Zustandsdicht, Spintronik Materialien}
+
+ \begin{document}
+% 	\frame{\titlepage}
+ 	\input{pages.tex}
+\end{document}

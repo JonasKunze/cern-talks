@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Wed Mar 27 09:35:33 CET 2013
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=.tmp
+mainTexFile=13.03.27_pisa-remote.tex
+outputFile=13.03.27_pisa-remote.pdf
+langSpell=en
+markDer=true
+srcDir=meetings/13.03.27_pisa-remote

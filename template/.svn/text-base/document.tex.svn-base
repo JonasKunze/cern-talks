@@ -1,0 +1,20 @@
+\input{../../common/header.tex}
+\usepackage[ngerman]{babel}
+\usepackage{bibgerm}
+
+\title{Exp. Bestimmung der elektronischen Zustandsdichte von Spintronik Materialien}
+\author{Jonas Kunze}
+\date{28. Juni 2010}
+
+\institute[{Universität Mainz}]{
+	\inst{} Universität Mainz \\ Prof. Dr. H. J. Elmers}
+%\titlegraphic{\includegraphics[height=3cm]{atlas}}
+%\logo{\includegraphics[width=2cm]{atlas}}
+
+\subject{Exp. Bestimmung der elektronischen Zustandsdichte von Spintronik Materialien}
+\keywords{Spintronics, Zustandsdicht, Spintronik Materialien}
+
+\begin{document}
+ 	\frame{\titlepage}
+ 	\input{einfuehrung.tex}
+\end{document}
