@@ -37,7 +37,7 @@ for (auto trb : decoderHandler.getCEDARDecoderRange()) {
 \end{frame}
 
 \begin{frame}{Lazy Decoding}{}
-	\begin{block}{Decoder methods are idempotent}
+	\begin{block}{DecoderHandler methods are idempotent and lazy}
 		\begin{itemize}
 	  		\item Actual decoding processed only when user accesses data
 	  		\item Data may be accessed in any order
@@ -52,7 +52,7 @@ for (auto trb : decoderHandler.getCEDARDecoderRange()) {
 \begin{frame}{Current performance}{}
 	\begin{block}{Rough performance test (preliminary!)}
 		\begin{itemize}
-	  		\item Decoded CEDAR data with average of 6 edges per event
+	  		\item Decoded CEDAR data with 6 TRBs and $\sim 6$ edges per event
 	  		\item Average decoding time: ~	$\sim 14 \mu s$ per Event
 	  		\item Sums of all edges in every sector: $\sim 2 \mu s$ per Event
 	  		\item Time dominated by cache misses
@@ -128,6 +128,21 @@ for (auto trb : decoderHandler.getCEDARDecoderRange()) {
 		\end{figure}
 \end{frame}
 
+\begin{frame}{Trigger Word Length}{}
+	8 bit seem not to be sufficient for at least L1
+	
+	\begin{block}{There is one byte reserved in the Event header}
+		Use 2 Byte for L2
+	\end{block}
+	
+	\begin{block}{Add one word and use the reserved byte}
+		\begin{itemize}
+		  \item L0: 1 Byte
+		  \item L1: 3 Byte
+		  \item L3: 4 Byte
+		\end{itemize}
+	\end{block}
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Activities/People}
