@@ -1,5 +1,5 @@
 #TeXlipse project settings
-#Fri May 09 14:32:27 CEST 2014
+#Tue Mar 24 18:26:43 UTC 2015
 markTmpDer=true
 builderNum=2
 outputDir=
@@ -7,8 +7,8 @@ makeIndSty=
 bibrefDir=
 outputFormat=pdf
 tempDir=.tmp
-mainTexFile=nss12-NA62-Online-PC-Farm.tex
-outputFile=nss12-NA62-Online-PC-Farm.pdf
+mainTexFile=15.03.25_cern-trigger-status.tex
+outputFile=15.03.25_cern-trigger-status.pdf
 langSpell=en
 markDer=true
-srcDir=conferences/29.10.12_IEEE-NSS/paper
+srcDir=meetings/15.03.25_cern-trigger-status
